@@ -6,6 +6,7 @@ using UnityEngine.Tilemaps;
 public class BuildingSystem : MonoBehaviour
 {
     public static BuildingSystem current;
+    public static bool isBuildingActive = false;
 
     public GridLayout gridLayout;
     private Grid grid;
@@ -27,9 +28,21 @@ public class BuildingSystem : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (isBuildingActive)
         {
-            InitilizeWithObject(prefab1);
+            //Something with the cam
+            Camera.main.enabled = true;
+            
+            if (Input.GetKeyDown(KeyCode.Mouse1))
+            {
+                InitilizeWithObject(prefab1);
+            }
+
+            if (Input.GetKeyDown(KeyCode.Backslash))
+            {
+                Camera.main.enabled = false;
+                isBuildingActive = false;
+            }
         }
     }
     
