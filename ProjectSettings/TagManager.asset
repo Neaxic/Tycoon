@@ -6,6 +6,10 @@ TagManager:
   tags:
   - dmgTest
   - Zombie
+  - MoneyGold
+  - Base
+  - Money
+  - nogoZone
   layers:
   - Default
   - TransparentFX
