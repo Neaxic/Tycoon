@@ -5,6 +5,7 @@ Alle commits er af mig, der er ikke andre end mig der har arbejdet på det her.
 Youtube video:https://youtu.be/2rNBdWh0Edk
 
 WEBGL: http://javel.dk/games/Tycoon/index.html
+(NOTE: CONTROLS; B - buy, venstre klik placer, højre klik & drag for drag af tower, p for at slette sidste sat)
 
 Sources of infomation (Other than itslearning);
 
