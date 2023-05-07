@@ -241,8 +241,8 @@ MonoBehaviour:
   turnSpeed: 5
   projectile: {fileID: 5200970013478306148, guid: 262944e05917816409f25ecbf01691d3, type: 3}
   gunBarrel: {fileID: 5347922521900640751}
-  shootDelay: 1
-  damage: 50
+  shootDelay: 0.8
+  damage: 70
   speed: 55
 --- !u!4 &8637797761879831025 stripped
 Transform:

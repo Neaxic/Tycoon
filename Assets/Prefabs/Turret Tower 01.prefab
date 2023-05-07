@@ -104,7 +104,7 @@ MonoBehaviour:
   projectile: {fileID: 5200970013478306148, guid: 262944e05917816409f25ecbf01691d3, type: 3}
   gunBarrel: {fileID: 6273089658441500139}
   shootDelay: 0.2
-  damage: 4
+  damage: 6
   speed: 50
 --- !u!1 &6272049584311325717
 GameObject:

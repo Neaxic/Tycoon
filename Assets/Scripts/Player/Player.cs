@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
         health -= dmg;
         HealthStatus.SetHealth(health);
 
-        if (health < 0)
+        if (health <= 0)
         {
             Destroy(player);
         }

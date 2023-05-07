@@ -11,7 +11,7 @@ public class WaveManager : MonoBehaviour
     public GameObject enemyPrefab2;
     public GameObject enemyPrefab3;
     private float waveTime = 90;
-    private float peaceTime = 30;
+    private float peaceTime = 15;
     private bool state = true;
     private int baseNumEnemies = 3;
     private float enemyHealthMultiplier = 1.2f;
@@ -92,14 +92,9 @@ public class WaveManager : MonoBehaviour
             int spawnAreaIndex = Random.Range(0, 4);
             Transform selectedSpawnArea = spawnAreas[spawnAreaIndex];
             Vector3 platformPosition = selectedSpawnArea.position;
-            Vector3 spawnPosition = platformPosition +
-                                    new Vector3(
-                                        Random.Range(-selectedSpawnArea.localScale.x / 2,
-                                            selectedSpawnArea.localScale.x / 2), 0,
-                                        Random.Range(-selectedSpawnArea.localScale.z / 2,
-                                            selectedSpawnArea.localScale.z / 2));
-            spawnPosition.y =
-                platformPosition.y + 2; 
+        
+            
+            Vector3 spawnPosition = platformPosition + new Vector3(0, 2, 0);
 
             GameObject enemy1 = Instantiate(enemyPrefabToSpawn, spawnPosition, Quaternion.identity);
             enemy1.GetComponent<Enemy>().health = (int)((float)enemy1.GetComponent<Enemy>().health *
