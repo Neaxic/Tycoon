@@ -18,9 +18,7 @@ public class buildableToggle : MonoBehaviour
     void Start()
     {
         priceText.text = ""+price;
-        //Fetch the Toggle GameObject
         togglerItself = GetComponent<Toggle>();
-        //Add listener for when the state of the Toggle changes, to take action
         togglerItself.onValueChanged.AddListener(delegate {
             ToggleValueChanged(togglerItself);
         });

@@ -10,8 +10,8 @@ public class baseController : MonoBehaviour
     public healthStatus HealthStatus;
     public HealthBar HealthBar;
 
-    private float damageInterval = 5f; // how often the base takes damage
-    private float timer = 0f; // timer to track when to apply damage
+    private float damageInterval = 5f; 
+    private float timer = 0f; 
 
     void Start()
     {
@@ -29,7 +29,7 @@ public class baseController : MonoBehaviour
 
             if (timer <= 0f)
             {
-                Damage(1); // base takes 1 damage every 5 seconds while an enemy is inside its collision box
+                Damage(1);
                 timer = damageInterval;
             }
         }
@@ -54,7 +54,7 @@ public class baseController : MonoBehaviour
         Enemy enemy = other.GetComponent<Enemy>();
         if (enemy != null)
         {
-            timer = damageInterval; // start the damage timer when an enemy enters the collision box
+            timer = damageInterval; 
             Damage(enemy.damage);
         }
     }
@@ -64,7 +64,7 @@ public class baseController : MonoBehaviour
         Enemy enemy = other.GetComponent<Enemy>();
         if (enemy != null)
         {
-            timer = 0f; // stop the damage timer when an enemy exits the collision box
+            timer = 0f;
         }
     }
 }

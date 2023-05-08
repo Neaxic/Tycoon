@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using Chests;
 using UnityEngine;
 
 public class ChestPad : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public chestUnlocker chest;
+    public IChestUnlocker chest;
     
     void OnCollisionEnter(Collision collision)
     {

@@ -63,7 +63,6 @@ public class turret : MonoBehaviour
             }
             else
             {
-                // If the target doesn't have the Enemy script, just aim at its center
                 gunBarrel.LookAt(target);
             }
         }

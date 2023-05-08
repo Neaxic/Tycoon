@@ -42,7 +42,7 @@ public class WaveManager : MonoBehaviour
                 {
                     state = !state;
                     waveTime = 30;
-                    SpawnEnemies(); // Spawn enemies at the start of each wave
+                    SpawnEnemies(); 
                 }
 
                 break;

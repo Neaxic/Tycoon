@@ -11,7 +11,6 @@ public class Player : MonoBehaviour
     public goldStatus GoldStatus;
     public GameObject player;
     
-    // Start is called before the first frame update
     void Start()
     {
         HealthStatus.SetMaxHealth(maxHealth);
@@ -19,7 +18,6 @@ public class Player : MonoBehaviour
         GoldStatus.SetGold(gold);
     }
 
-    // Update is called once per frame
     void Update()
     {
     }
